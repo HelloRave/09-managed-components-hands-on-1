@@ -1,4 +1,5 @@
 import React from "react";
+import Answer from "./Answer";
 import AskForNumber from "./AskForNumber";
 
 export default class App extends React.Component {
@@ -29,6 +30,7 @@ export default class App extends React.Component {
           updateField={this.updateFormField}
           add={this.addNumber}
         />
+        <Answer result={this.state.total} />
       </div>
     );
   }
